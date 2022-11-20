@@ -1,0 +1,16 @@
+<h1 mat-dialog-title style="text-align:center;">Delete information</h1>
+<div mat-dialog-content style=" text-align: center;">
+    Are you sure you want to delete person who located in row {{index+1}}?
+</div>
+<div mat-dialog-actions style="display: block; margin-left: auto;
+margin-right: auto; width: 70%;
+  height: 25px;">
+    <br>
+    <button mat-button mat-dialog-close style=" background-color: #b17c0a; color: rgb (0, 0, 0);" 
+    (click)="onOk(false)">No</button>
+
+    <div style="display: inline-block; margin-right: 64px; height:auto;"></div>
+    <button mat-button mat-dialog-close cdkFocusInitial style="background-color: #b17c0a; color: rgb(0, 0, 0);"
+    (click)="onOk(true)" >Yes</button>
+</div>
+<br><br>

@@ -1,0 +1,37 @@
+  <h1 mat-dialog-title style="text-align:center;">Checking passwords</h1>
+  <div mat-dialog-content style=" text-align: center;">
+    Lets check passwords. </div>
+  <div mat-dialog-actions style="display: block; margin-left: auto; margin-right: auto; width: 70%; height: 25px;">
+    <br>
+
+    <button mat-button mat-dialog-close style=" background-color: #b17c0a; color: rgb (0, 0, 0); display:block;
+    margin-left: auto; margin-right: auto;"
+      (click)="doBut()">Check</button>
+
+  </div>
+
+<br><br>
+
+
+<ng-template #alertModal>
+  <div>
+    <div *ngIf="isMatchPassword">
+      <div mat-dialog-content style=" text-align: center;">
+        Passwords checked. submited!
+      </div>
+    </div>
+    <div *ngIf="!isMatchPassword">
+      <div mat-dialog-content style=" text-align: center;">
+        Passwords are not matched. Try again! <br>
+      </div>
+    </div>
+    <div mat-dialog-actions style="display: block; margin-left: auto; margin-right: auto; width: 70%; height: 25px;">
+
+      <button class="btn btn-danger my-btn" style=" background-color: #b17c0a; color: rgb (0, 0, 0); display: block;
+      margin-left: auto;
+      margin-right: auto; "
+        (click)="doOk()">Ok</button>
+
+    </div>
+  </div>
+</ng-template>

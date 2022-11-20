@@ -1,0 +1,38 @@
+<div >
+   
+    <label><b>First name: </b></label><br>
+    <input type="text"  placeholder="Enter name" [(ngModel)]="name"><br><br>
+
+    <label><b>Last name: <br></b></label><br>
+    <input type="text"  placeholder="Enter last name" [(ngModel)]="lastName"><br><br>
+
+    <label><b>ID: <br></b></label><br>
+    <input type="text" placeholder="Enter ID number" [(ngModel)]="id"><br><br>
+    
+    <label><b>Gender: <br></b></label><br>
+    <select name="" id="" placeholder="Select gender" [(ngModel)]="gender" > <br><br> 
+        <option value="male"> male</option>
+        <option value="female"> female</option>
+        <option value="none of them">none of them</option>
+    </select> <br><br>
+
+    <label><b>Email: <br></b></label><br>
+    <input type="email" placeholder="Enter email" [(ngModel)]="email"><br><br>
+
+    <label><b>Password: <br></b></label><br>
+    <input type="password" placeholder="Enter password" [(ngModel)]="password"><br><br>
+    
+    <label><b>Repeated password: <br></b></label><br>
+    <input type="password" placeholder="Re-enter password" [(ngModel)]="repPass"><br><br>
+  
+    <button mat-raised-button (click)="objMaker()" style="display: block; margin-left: auto; margin-right: auto; font-size: large; width: 30%;
+    height: 50px; background-color: #007222; color: rgb(255, 255, 255);">
+    Done</button><br><br>
+   </div>
+
+   <!-- {{data}}
+
+   <input [type]="varType">
+
+   <input type="email">
+   <input type="pass" name="" id=""> -->

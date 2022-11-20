@@ -1,0 +1,65 @@
+
+
+<!-- <div>Name : {{person.name}}</div>
+<br>
+<div>Last name : {{person.lastName}}</div>
+<br>
+<div>Gender : {{person.gender}} <br> <br><br> -->
+    
+    <div *ngIf="employeeList"> If they are accetable press final registeration key: <br><br>
+        <input *ngIf="employeeList" type="button" id="final" value="Final" (click)="enterPressed2()"></div>
+        <br> {{ result2}}
+    <br>
+<br>
+    
+        <!-- <table id="myTable">
+            <tr>
+              <th>Name</th>
+              <th>Lastname</th>
+              <th>ID</th>
+              <th>Gender</th>
+              <th>Email</th>
+              <th>Delete</th>
+              <th>Edit</th>
+            </tr>
+        <tr  *ngFor="let emp of employeeList; let idx = index">
+            <td>{{emp.name}}</td>
+            <td>{{emp.lastName}}</td>
+            <td>{{emp.id}}</td> 
+            <td>{{emp.gender}}</td>  
+            <td>{{emp.email}}</td>
+            <td> <input type="button" id="delete" value="Delete" (click)="delete(idx)"></td>
+            <td> <input type="button" value="Edit" id="edit" (click)="Edit(idx)" ></td>
+        </tr>
+    </table> -->
+            <table class="table table-striped table-condensed Overflow-x:scroll" >
+                <thead>
+                  <tr>
+                    <th scope="col">Row</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Lastname</th>
+                    <th scope="col">ID</th>
+                    <th scope="col">Gender</th>
+                    <th scope="col">Email</th>
+                    <th scope="col">Delete</th>
+                    <th scope="col">Edit</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr  *ngFor="let emp of employeeList; let idx = index">
+                    <th scope="row">{{idx+1}}</th>
+                    <td>{{emp.name}}</td>
+                    <td>{{emp.lastName}}</td>
+                    <td>{{emp.id}}</td>
+                    <td>{{emp.gender}}</td>
+                    <td>{{emp.email}}</td>
+                    <td>   <button mat-raised-button (click)="openDialog('500ms', '500ms', idx)">Delete</button>
+                    </td>
+                    <td> <input type="button" value="Edit" id="edit" (click)="Edit(idx)" ></td>
+                  </tr>
+                  
+                </tbody>
+              </table>
+              
+        
+    <br>

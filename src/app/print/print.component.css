@@ -1,0 +1,44 @@
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    background-color: rgb(245, 172, 89);
+    table-layout: fixed;
+
+  }
+  
+  td, th {
+    border: 1px solid #ff0000;
+    text-align: left;
+    padding: 8px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+
+  }
+  td :hover{
+    max-width : initial; 
+  }
+  tr:nth-child(even) {
+    background-color: rgb(255, 147, 6);
+  }
+#final{
+    font-size: large;
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%;
+  height: 50px;
+  background-color: #b44800;
+  color: rgb(255, 255, 255);
+}
+#delete, #edit, button{
+  font-size: medium;
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+  height: 40px;
+  background-color: #b17c0a;
+  color: rgb(0, 0, 0);
+}
